@@ -1,0 +1,184 @@
+
+.alignement {
+	margin-left: 200px; /*décaller de 200pixel par rapport à la marge de la page principale à gauche */
+	margin-right: 200px; /*décaller de 200pixel par rapport à la marge de la page principale à droite*/
+	/*margin-top: 100px;
+	margin-bottom: 100px;*/
+	border: 5px solid gray; /* Pour afficher les bordure par solide de 5px avec comme couleur gris */
+	background-color: #DCDCDC; /*couleur arrière plan */
+	-moz-border-radius: 30px; /* pour faire une sorte de courbe dans chaque angle droit du div */
+}
+img {
+	border: 1px solid;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+#logo {
+	width: 100%; /* Pour dire la class logo de prendre toute la largeur */ 
+	border: 1px solid ;
+}
+#menu {
+	width: 100%; 
+	border: 1px solid ; /*afficher bordure avec couleur rouge*/
+	margin: auto; /* boîte centrée horizontalement */
+	text-align: center; /*positionner le texte au centre */
+	}
+#menu #menus {
+
+ 	list-style-type:none;/* Pour ne pas afficher les pointiers ou numérotations */
+ 	/* le comportement par défaut de li est vertical donc on modifie par display: inline-block;*/
+ 	width: 100%;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	overflow: hidden;
+
+ }
+ #menus li {
+ 	/* le comportement par défaut de li est vertical donc on modifie par display: inline-block;*/
+ 	display: inline-block;
+ 	/*pour afficher les bordures avec on le met solide et le pixel pour foncer*/
+ 	width: 196px;
+ 	padding: 10px;
+ 	margin: auto;
+ 	margin-left: 0%;
+ 	float: left; /* positionner les listes à gauches */
+ 	border: 1px solid black;
+ 	background-color: #555;
+ }
+#menus li a {
+	display:inline-block;
+	width: 150px;
+	padding: 10px 20px;
+	margin: 10px;
+    text-decoration: none ; /* Pour supprimer le soulignement des liens */
+    color: black;
+ }
+
+ #menus :hover {
+    background: teal;
+}
+
+#menus #sousmenu:hover {
+    background: none;
+}
+#sousmenu {
+    background: none;
+}
+
+#sousmenu {
+    display: none; /* pour ne pas afficher le contenu */
+    position: absolute;
+    width: 193px;
+    text-align: center;
+    margin-left: -30px;
+    margin-top: 10px; /* Faire descendre le sous menu de 1àpx */
+    
+ }
+
+ #menus :hover #sousmenu {
+    display: block; /*Si le souris touche le menus, ce dernier affiche le sousmenu en bloc */
+  }
+#sousmenu li {
+    display: block;
+    margin-left: -20px;
+}
+
+#sousmenu li a {
+     padding: 15px 30px;
+     display: block;
+     text-align: left;
+     color: #ccc;
+ }
+
+#centre {
+	width: 100%;
+	border: 1px solid ;
+	height: 405px;
+	text-align: center;
+}
+#gauche {	
+	border: 1px solid black;
+	height: 398px;
+  	width: 49%;
+  	margin-top: 2px;
+  	background: #555;
+  	margin-left: 4px;
+}
+#droite {
+	border: 1px solid;
+	height: 398px;
+	width: 49%;
+	float: right; /* Positionner l'identifiant droite à droite de la page */
+	margin-top: -400px;/*Faire remonter la section */
+	margin-right: 4px;	
+}
+
+#haut {
+	height: 196px;
+	border: 1px solid;
+	width: 100%;
+	background-color: #555;
+
+}
+#bas {
+	height: 196px;
+	border: 1px solid;
+	width: 100%;
+	margin-top: 2px;	
+	background-color: #555;
+}
+
+.pied {
+	width: 100%;
+	border: 1px solid black;
+	height: 110px;
+	}
+.piedgauche {
+	border: 1px ;
+	width: 30%;
+	margin-top: 4px;
+	height: 98px;
+	background-color: #555;
+	border: 1px solid black;
+	text-align: center;
+	margin-left: 2px;
+	margin-bottom: 2px;
+}
+.piedmilieu {
+	margin: 0 auto;
+	width: 38%;
+	margin-top: -11.7%;
+	background-color: #555;
+	height: 98px;
+	border: 1px solid black;
+	text-align: center;
+	margin-bottom: 4px;
+}
+.pieddroite {
+	width: 30%;
+	margin-top: -12.1%;
+	height: 98px;
+	background-color: #555;
+	border: 1px solid black;
+	float: right;
+	text-align: center;
+	margin-right: 2px;
+	margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 780px) {
+	div li a {
+		font-size: 12px;
+		padding: 10px;
+	}
+	div li:hover a {
+		padding: 5px 10px 10px 10px;
+	}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
