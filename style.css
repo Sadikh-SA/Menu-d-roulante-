@@ -168,17 +168,11 @@ img {
 }
 
 
-@media screen and (max-width: 780px) {
-	div li a {
-		font-size: 12px;
-		padding: 10px;
-	}
-	div li:hover a {
-		padding: 5px 10px 10px 10px;
-	}
-}
-
-body {
-    margin: 0;
-    padding: 0;
+@media screen and (max-width: 650px) {
+    #logo #menu #centre .pied img {
+        width: 50%;
+    }
+    #logo img {
+        width: 40%;
+    }
 }
